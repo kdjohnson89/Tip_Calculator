@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tip Calculator</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 		<body>
-			<div id="bill_amount">
-				<p>Enter bill total:</p>
-				<form>
-					<input id="bill_amount" type="text" name="billamount">
-						<p>Enter desired tip percentage, or select a percentage below:</p>
-						<input id="tip_amount" type="text" name="tipamount">
-							<input id="ten" type="button" value="10%">
-							<input id="fifteen" type="button" value="15%">
-							<input id="twenty" type="button" value="20%">
-				</form>
-				<p id="total">Bill total after tip: </p>
-			</div>
+			<div id="container">
+				<h1>Tip Calculator</h1>
+					<div id="billTotal">
+						<label>Enter bill total:</label>
+							<input id="billAmount" type="text" name="billamount" placeholder="0.00">
+								<br>
+						<label>Enter desired tip percentage:</label>
+							<input id="tipAmount" type="range" name="tipamount" value="0" list="tickmarks" max="100">
+								<span id="percent">0</span>
+								<br>
+						<label>Split between how many people?</label>
+							<input id="split" type="range" name="split" min="1" value="1">
+								<br>
+						<label>Bill total after tip (per person): </label><span>0</span>
+					</div>
+				</div>
 			<script src="app.js"></script>
 		</body>
 </html>
