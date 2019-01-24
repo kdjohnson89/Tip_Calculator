@@ -8,7 +8,7 @@ document.getElementById('container').onchange = function() {
 	
 	document.getElementById('percent').innerHTML = tip + "%";
 	document.getElementById('people').innerHTML = split;
-	document.getElementById('total').innerHTML = "$" + perPerson;
-	document.getElementById('final').innerHTML= "$" + final;
+	document.getElementById('total').innerHTML = "$" + perPerson.toFixed(2);
+	document.getElementById('final').innerHTML= "$" + final.toFixed(2);
 }
 
