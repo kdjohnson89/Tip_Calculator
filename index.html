@@ -8,19 +8,30 @@
 	</head>
 		<body>
 			<div id="container">
+				<div>
 				<h1>Tip Calculator</h1>
 					<div id="billTotal">
+						<hr>
 						<label>Enter bill total:</label>
 							<input id="billAmount" type="text" name="billamount" placeholder="0.00">
 								<br>
 						<label>Enter desired tip percentage:</label>
-							<input id="tipAmount" type="range" name="tipamount" value="0" list="tickmarks" max="100">
-								<span id="percent">0</span>
+							<input id="tipAmount" type="range" name="tipamount" value="0" max="100">
+								<span id="percent">0%</span>
 								<br>
 						<label>Split between how many people?</label>
-							<input id="split" type="range" name="split" min="1" value="1">
+							<input id="split" type="range" name="split" min="1" max="20" value="1">
+								<span id="people">1<span>
 								<br>
-						<label>Bill total after tip (per person): </label><span>0</span>
+								<hr>
+						</div>
+					<div>
+						<label>Amount owed per person: </label>
+							<span id="total">$0</span>
+							<br>
+						<label>Final bill amount: </label>
+							<span id="final">$0</span>
+						</div>
 					</div>
 				</div>
 			<script src="app.js"></script>
