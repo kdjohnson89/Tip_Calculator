@@ -1,3 +1,4 @@
+//Function that gets user input and calculates the new bill amount per person and total
 document.getElementById('container').onchange = function() {
 	var bill = Number(document.getElementById('billAmount').value);
 	var tip = document.getElementById('tipAmount').value;

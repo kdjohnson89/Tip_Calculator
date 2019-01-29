@@ -1,8 +1,16 @@
 #container {
+	display: flex;
+	-webkit-flex-direction: column;
 	background-color: #33DEFF;
 	border-radius: 25px;
-	padding: 1% 5% 5% 5%;
-	width: 90%;
+	padding: 1% 3% 3% 3%;
+	width: 350px;
+	align-items: center;
+	text-align: center;
+}
+
+#billAmount {
+	width: 30%;
 }
 
 h1 {
